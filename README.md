@@ -62,6 +62,18 @@ npm run preview
 - `src/styles.css` - global styles
 - `src/components/ui/` - reusable UI primitives
 
+## GitHub Pages Deployment
+
+This repo includes a GitHub Actions workflow in [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml) that deploys the app from the `main` branch.
+
+The workflow does three things:
+
+1. Builds the app with the GitHub Pages base path enabled.
+2. Prerenders the home page into `dist/client/index.html` and `dist/client/404.html`.
+3. Publishes `dist/client` to GitHub Pages.
+
+Before the first deploy, make sure GitHub Pages is set to use **GitHub Actions** in the repository settings.
+
 ## Notes
 
 - `src/routes/README.md` documents TanStack Start route conventions.

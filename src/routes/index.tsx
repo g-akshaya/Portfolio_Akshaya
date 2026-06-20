@@ -215,15 +215,18 @@ function Index() {
           <div className="glass rounded-3xl p-8">
             <h3 className="text-2xl font-bold uppercase">Curious by default.</h3>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              I gravitate toward systems that learn and adapt — retrieval pipelines, automation flows, intelligent search.
-              Outside the editor I'm usually tracing constellations, in the gym, or clay sculpting.
+              I like things that reveal themselves slowly.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Different mediums, same instinct: keep observing until the pattern shows up.
+              Trails make more sense the further you walk them. Strength comes from repetition. The night sky rewards patience. Software systems aren't much different.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Also, President of the Nature Watch Club at college — running sustainability workshops and student engagement programs.
+              That curiosity is what pulled me into AI, backend engineering, and building tools that solve real-world problems. I enjoy taking apart complex systems, understanding the patterns underneath, and putting them back together in a way that makes sense.
             </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Outside the editor you'll usually find me planning the next trek, lifting something heavy, sketching ideas, or looking up.
+            </p>
+            <p className="mt-4 font-mono text-sm text-primary">Still chasing good questions.</p>
           </div>
           <div className="glass rounded-3xl p-8 flex flex-col justify-between">
             <div>
@@ -232,12 +235,15 @@ function Index() {
                 "Somewhere, something incredible is waiting to be known."
               </blockquote>
               <div className="mt-3 font-mono text-sm text-muted-foreground">— Carl Sagan</div>
+              <p className="mt-8 text-muted-foreground leading-relaxed">
+                The best projects usually start the same way: with a question I can't stop thinking about.
+              </p>
             </div>
             <div className="mt-8 flex items-center gap-3 text-primary">
-              <Star className="h-4 w-4 fill-current animate-pulse" />
+              <Star className="h-4 w-4 fill-current" />
               <Moon className="h-5 w-5" />
               <Sparkles className="h-4 w-4" />
-              <span className="font-mono text-xs text-muted-foreground">a problem · a trail · a clear night sky.</span>
+              <span className="font-mono text-xs text-muted-foreground">a question · a trail · a clear night sky.</span>
             </div>
           </div>
         </div>

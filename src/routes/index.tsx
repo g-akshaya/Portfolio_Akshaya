@@ -76,9 +76,6 @@ function Index() {
   const planet1Y = useTransform(scrollY, [0, 2000], [0, -400]);
   const planet2Y = useTransform(scrollY, [0, 2000], [0, 300]);
   const planet1Rot = useTransform(scrollY, [0, 3000], [0, 60]);
-  const roverX = useTransform(scrollYProgress, [0, 1], ["-10%", "110%"]);
-  const roverRot = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [0, -3, 2, -2, 0]);
-
   return (
     <div className="relative min-h-screen text-foreground">
       <div className="starfield" />
@@ -102,20 +99,11 @@ function Index() {
         style={{ background: "radial-gradient(circle at 35% 35%, oklch(0.85 0.14 210), oklch(0.4 0.18 220) 70%, oklch(0.12 0.04 280))", boxShadow: "0 0 60px oklch(0.55 0.18 210 / 0.6)", y: planet2Y }}
       />
 
-      {/* Scrolling rover at bottom */}
-      <motion.div
-        aria-hidden
-        className="pointer-events-none fixed bottom-4 z-30 w-32 text-primary"
-        style={{ x: roverX, rotate: roverRot }}
-      >
-        <RoverSVG className="w-full drop-shadow-[0_0_12px_oklch(0.78_0.18_320/0.6)]" />
-      </motion.div>
-
       {/* Nav */}
       <nav className="sticky top-0 z-40 backdrop-blur-md border-b border-border/40 bg-background/30">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center gap-2 text-foreground">
-            <CatAstronautLogo className="h-8 w-8 text-primary" />
+            <RoverLogo className="h-8 w-8 text-primary" />
             <span className="font-mono font-bold tracking-widest">AKSHAYA.G</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-mono uppercase tracking-wider text-muted-foreground">

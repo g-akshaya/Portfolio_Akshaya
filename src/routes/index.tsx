@@ -213,18 +213,15 @@ function Index() {
       <Section id="about" n="01" title="About">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="glass rounded-3xl p-8">
-            <h3 className="text-2xl font-bold uppercase">Curious by default.</h3>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              I like things that reveal themselves slowly.
-            </p>
+            <h3 className="text-2xl font-bold uppercase">I like things that reveal themselves slowly.</h3>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Trails make more sense the further you walk them. Strength comes from repetition. The night sky rewards patience. Software systems aren't much different.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              That curiosity is what pulled me into AI, backend engineering, and building tools that solve real-world problems. I enjoy taking apart complex systems, understanding the patterns underneath, and putting them back together in a way that makes sense.
+              That's what drew me to AI, backend engineering, and building tools that solve real problems. I enjoy finding patterns in complex systems and turning them into something useful.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Outside the editor you'll usually find me planning the next trek, lifting something heavy, sketching ideas, or looking up.
+              Outside the editor, you'll usually find me on a trek, in the gym, sketching ideas, or looking up.
             </p>
             <p className="mt-4 font-mono text-sm text-primary">Still chasing good questions.</p>
           </div>

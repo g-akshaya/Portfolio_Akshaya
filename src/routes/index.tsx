@@ -164,15 +164,6 @@ function Index() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="glass relative rounded-3xl p-6"
           >
-            <div className="absolute -top-12 -right-8 h-40 w-40 overflow-hidden">
-              <motion.img
-                src={heroImg}
-                alt="Astronaut cat floating in nebula"
-                className="h-full w-full rounded-full object-cover border-2 border-primary/40 glow-ring"
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              />
-            </div>
             <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary">
               <Star className="h-3 w-3 fill-current" /> Mission Log
             </div>

@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { Rocket, Github, Linkedin, Mail, Star, Orbit, Satellite, Telescope, Sparkles, Moon } from "lucide-react";
-import heroImg from "@/assets/space-hero.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

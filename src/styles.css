@@ -87,10 +87,10 @@
   --nebula-violet: oklch(0.55 0.22 295);
   --nebula-cyan: oklch(0.82 0.14 210);
   --star: oklch(0.98 0.04 95);
-  --gradient-cosmic: radial-gradient(ellipse at 20% 10%, oklch(0.35 0.18 295 / 0.55), transparent 55%),
-                     radial-gradient(ellipse at 80% 30%, oklch(0.45 0.2 340 / 0.45), transparent 55%),
-                     radial-gradient(ellipse at 60% 90%, oklch(0.4 0.18 210 / 0.45), transparent 60%),
-                     linear-gradient(180deg, oklch(0.1 0.04 280), oklch(0.14 0.05 285));
+  --gradient-cosmic: radial-gradient(ellipse at 15% 5%, oklch(0.22 0.1 295 / 0.55), transparent 50%),
+                     radial-gradient(ellipse at 85% 25%, oklch(0.22 0.1 340 / 0.45), transparent 55%),
+                     radial-gradient(ellipse at 60% 95%, oklch(0.2 0.1 210 / 0.45), transparent 60%),
+                     linear-gradient(180deg, oklch(0.06 0.025 280), oklch(0.08 0.03 285));
   --gradient-aurora: linear-gradient(135deg, var(--nebula-pink), var(--nebula-violet) 50%, var(--nebula-cyan));
   --shadow-glow: 0 0 40px oklch(0.78 0.22 320 / 0.45), 0 0 120px oklch(0.55 0.22 295 / 0.35);
   --shadow-card: 0 30px 80px -20px oklch(0.05 0.04 280 / 0.8), inset 0 1px 0 oklch(1 0 0 / 0.06);

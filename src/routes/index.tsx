@@ -34,62 +34,26 @@ const projects = [
   { n: "03", name: "AI Smart Parking System", tech: "Python · OpenCV · RFID", body: "Intelligent parking with RFID auth and OpenCV verification. Automated vehicle ID and slot monitoring." },
 ];
 
-function CatAstronautLogo({ className = "" }: { className?: string }) {
+function RoverLogo({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 64 64" className={className} fill="none">
-      <defs>
-        <radialGradient id="helmet" cx="50%" cy="40%" r="50%">
-          <stop offset="0%" stopColor="oklch(0.95 0.05 220)" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="oklch(0.4 0.18 290)" stopOpacity="0.6" />
-        </radialGradient>
-      </defs>
-      <circle cx="32" cy="34" r="22" fill="url(#helmet)" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M16 28 L20 18 L26 26 Z" fill="currentColor" />
-      <path d="M48 28 L44 18 L38 26 Z" fill="currentColor" />
-      <circle cx="26" cy="34" r="2" fill="currentColor" />
-      <circle cx="38" cy="34" r="2" fill="currentColor" />
-      <path d="M28 42 Q32 45 36 42" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      <circle cx="22" cy="26" r="3" fill="white" opacity="0.5" />
-    </svg>
-  );
-}
-
-function RoverSVG({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 200 140" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg viewBox="0 0 64 48" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       {/* Solar panel */}
-      <rect x="40" y="20" width="120" height="28" rx="2" fill="oklch(0.35 0.18 260 / 0.4)" />
-      <line x1="60" y1="20" x2="60" y2="48" />
-      <line x1="80" y1="20" x2="80" y2="48" />
-      <line x1="100" y1="20" x2="100" y2="48" />
-      <line x1="120" y1="20" x2="120" y2="48" />
-      <line x1="140" y1="20" x2="140" y2="48" />
-      <line x1="40" y1="34" x2="160" y2="34" />
-      {/* Mast + camera */}
-      <line x1="100" y1="20" x2="100" y2="6" />
-      <circle cx="100" cy="6" r="4" fill="oklch(0.78 0.18 320)" />
+      <rect x="10" y="8" width="44" height="10" rx="1.5" fill="currentColor" fillOpacity="0.15" />
+      <line x1="22" y1="8" x2="22" y2="18" />
+      <line x1="32" y1="8" x2="32" y2="18" />
+      <line x1="42" y1="8" x2="42" y2="18" />
+      {/* Mast */}
+      <line x1="32" y1="8" x2="32" y2="3" />
+      <circle cx="32" cy="3" r="1.5" fill="currentColor" />
       {/* Body */}
-      <rect x="50" y="48" width="100" height="32" rx="4" fill="oklch(0.2 0.05 280 / 0.6)" />
-      <rect x="60" y="56" width="14" height="14" rx="2" fill="oklch(0.82 0.16 220 / 0.5)" />
-      <circle cx="135" cy="63" r="3" fill="oklch(0.78 0.18 320)" />
-      {/* Arm */}
-      <path d="M150 60 L172 70 L168 86" />
-      <circle cx="168" cy="86" r="3" fill="oklch(0.82 0.16 220)" />
+      <rect x="16" y="18" width="32" height="12" rx="2" fill="currentColor" fillOpacity="0.2" />
       {/* Suspension */}
-      <path d="M58 80 L48 100 M58 80 L72 100 M142 80 L132 100 M142 80 L156 100 M100 80 L100 100" />
+      <path d="M20 30 L16 40 M20 30 L26 40 M44 30 L40 40 M44 30 L48 40 M32 30 L32 40" />
       {/* Wheels */}
-      <circle cx="48" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="72" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="100" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="132" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="156" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="48" cy="108" r="4" />
-      <circle cx="72" cy="108" r="4" />
-      <circle cx="100" cy="108" r="4" />
-      <circle cx="132" cy="108" r="4" />
-      <circle cx="156" cy="108" r="4" />
-      {/* Ground line */}
-      <path d="M10 124 Q40 120 80 124 T160 122 T196 124" opacity="0.4" />
+      <circle cx="16" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="26" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="40" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="48" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
     </svg>
   );
 }

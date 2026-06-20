@@ -34,62 +34,26 @@ const projects = [
   { n: "03", name: "AI Smart Parking System", tech: "Python · OpenCV · RFID", body: "Intelligent parking with RFID auth and OpenCV verification. Automated vehicle ID and slot monitoring." },
 ];
 
-function CatAstronautLogo({ className = "" }: { className?: string }) {
+function RoverLogo({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 64 64" className={className} fill="none">
-      <defs>
-        <radialGradient id="helmet" cx="50%" cy="40%" r="50%">
-          <stop offset="0%" stopColor="oklch(0.95 0.05 220)" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="oklch(0.4 0.18 290)" stopOpacity="0.6" />
-        </radialGradient>
-      </defs>
-      <circle cx="32" cy="34" r="22" fill="url(#helmet)" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M16 28 L20 18 L26 26 Z" fill="currentColor" />
-      <path d="M48 28 L44 18 L38 26 Z" fill="currentColor" />
-      <circle cx="26" cy="34" r="2" fill="currentColor" />
-      <circle cx="38" cy="34" r="2" fill="currentColor" />
-      <path d="M28 42 Q32 45 36 42" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      <circle cx="22" cy="26" r="3" fill="white" opacity="0.5" />
-    </svg>
-  );
-}
-
-function RoverSVG({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 200 140" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg viewBox="0 0 64 48" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       {/* Solar panel */}
-      <rect x="40" y="20" width="120" height="28" rx="2" fill="oklch(0.35 0.18 260 / 0.4)" />
-      <line x1="60" y1="20" x2="60" y2="48" />
-      <line x1="80" y1="20" x2="80" y2="48" />
-      <line x1="100" y1="20" x2="100" y2="48" />
-      <line x1="120" y1="20" x2="120" y2="48" />
-      <line x1="140" y1="20" x2="140" y2="48" />
-      <line x1="40" y1="34" x2="160" y2="34" />
-      {/* Mast + camera */}
-      <line x1="100" y1="20" x2="100" y2="6" />
-      <circle cx="100" cy="6" r="4" fill="oklch(0.78 0.18 320)" />
+      <rect x="10" y="8" width="44" height="10" rx="1.5" fill="currentColor" fillOpacity="0.15" />
+      <line x1="22" y1="8" x2="22" y2="18" />
+      <line x1="32" y1="8" x2="32" y2="18" />
+      <line x1="42" y1="8" x2="42" y2="18" />
+      {/* Mast */}
+      <line x1="32" y1="8" x2="32" y2="3" />
+      <circle cx="32" cy="3" r="1.5" fill="currentColor" />
       {/* Body */}
-      <rect x="50" y="48" width="100" height="32" rx="4" fill="oklch(0.2 0.05 280 / 0.6)" />
-      <rect x="60" y="56" width="14" height="14" rx="2" fill="oklch(0.82 0.16 220 / 0.5)" />
-      <circle cx="135" cy="63" r="3" fill="oklch(0.78 0.18 320)" />
-      {/* Arm */}
-      <path d="M150 60 L172 70 L168 86" />
-      <circle cx="168" cy="86" r="3" fill="oklch(0.82 0.16 220)" />
+      <rect x="16" y="18" width="32" height="12" rx="2" fill="currentColor" fillOpacity="0.2" />
       {/* Suspension */}
-      <path d="M58 80 L48 100 M58 80 L72 100 M142 80 L132 100 M142 80 L156 100 M100 80 L100 100" />
+      <path d="M20 30 L16 40 M20 30 L26 40 M44 30 L40 40 M44 30 L48 40 M32 30 L32 40" />
       {/* Wheels */}
-      <circle cx="48" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="72" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="100" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="132" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="156" cy="108" r="10" fill="oklch(0.15 0.04 280)" />
-      <circle cx="48" cy="108" r="4" />
-      <circle cx="72" cy="108" r="4" />
-      <circle cx="100" cy="108" r="4" />
-      <circle cx="132" cy="108" r="4" />
-      <circle cx="156" cy="108" r="4" />
-      {/* Ground line */}
-      <path d="M10 124 Q40 120 80 124 T160 122 T196 124" opacity="0.4" />
+      <circle cx="16" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="26" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="40" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="48" cy="40" r="4" fill="currentColor" fillOpacity="0.3" />
     </svg>
   );
 }
@@ -112,9 +76,6 @@ function Index() {
   const planet1Y = useTransform(scrollY, [0, 2000], [0, -400]);
   const planet2Y = useTransform(scrollY, [0, 2000], [0, 300]);
   const planet1Rot = useTransform(scrollY, [0, 3000], [0, 60]);
-  const roverX = useTransform(scrollYProgress, [0, 1], ["-10%", "110%"]);
-  const roverRot = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [0, -3, 2, -2, 0]);
-
   return (
     <div className="relative min-h-screen text-foreground">
       <div className="starfield" />
@@ -123,35 +84,26 @@ function Index() {
       <motion.div
         aria-hidden
         style={{ scaleX: scrollYProgress }}
-        className="fixed top-0 left-0 right-0 z-50 h-[3px] origin-left bg-gradient-to-r from-[oklch(0.78_0.18_320)] via-[oklch(0.78_0.18_260)] to-[oklch(0.82_0.16_210)]"
+        className="fixed top-0 left-0 right-0 z-50 h-[3px] origin-left bg-gradient-to-r from-[oklch(0.68_0.18_30)] via-[oklch(0.55_0.16_25)] to-[oklch(0.4_0.12_20)]"
       />
 
       {/* Floating planets */}
       <motion.div
         aria-hidden
         className="pointer-events-none fixed top-32 right-[8%] z-0 h-40 w-40 rounded-full opacity-70"
-        style={{ background: "radial-gradient(circle at 30% 30%, oklch(0.85 0.18 340), oklch(0.45 0.22 295) 60%, oklch(0.15 0.05 280))", boxShadow: "0 0 80px oklch(0.55 0.22 320 / 0.5)", y: planet1Y, rotate: planet1Rot }}
+        style={{ background: "radial-gradient(circle at 30% 30%, oklch(0.75 0.16 40), oklch(0.45 0.16 25) 60%, oklch(0.12 0.03 20))", boxShadow: "0 0 60px oklch(0.45 0.16 25 / 0.4)", y: planet1Y, rotate: planet1Rot }}
       />
       <motion.div
         aria-hidden
         className="pointer-events-none fixed bottom-40 left-[5%] z-0 h-24 w-24 rounded-full opacity-60"
-        style={{ background: "radial-gradient(circle at 35% 35%, oklch(0.85 0.14 210), oklch(0.4 0.18 220) 70%, oklch(0.12 0.04 280))", boxShadow: "0 0 60px oklch(0.55 0.18 210 / 0.6)", y: planet2Y }}
+        style={{ background: "radial-gradient(circle at 35% 35%, oklch(0.65 0.12 50), oklch(0.35 0.1 30) 70%, oklch(0.1 0.02 20))", boxShadow: "0 0 40px oklch(0.4 0.12 30 / 0.4)", y: planet2Y }}
       />
-
-      {/* Scrolling rover at bottom */}
-      <motion.div
-        aria-hidden
-        className="pointer-events-none fixed bottom-4 z-30 w-32 text-primary"
-        style={{ x: roverX, rotate: roverRot }}
-      >
-        <RoverSVG className="w-full drop-shadow-[0_0_12px_oklch(0.78_0.18_320/0.6)]" />
-      </motion.div>
 
       {/* Nav */}
       <nav className="sticky top-0 z-40 backdrop-blur-md border-b border-border/40 bg-background/30">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center gap-2 text-foreground">
-            <CatAstronautLogo className="h-8 w-8 text-primary" />
+            <RoverLogo className="h-8 w-8 text-primary" />
             <span className="font-mono font-bold tracking-widest">AKSHAYA.G</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-mono uppercase tracking-wider text-muted-foreground">
@@ -194,8 +146,8 @@ function Index() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed"
             >
-              Aspiring AI &amp; software engineer building RAG systems, intelligent search and backend tooling.
-              I like problems that need a bit of patience and a lot of curiosity — the kind a space-cat would approve of. 🐾
+              Building AI systems and backend software for people who need answers, not complexity.
+              Motivated by curiosity, guided by engineering, and always looking a little further over the horizon.
             </motion.p>
 
             <motion.div
@@ -204,7 +156,7 @@ function Index() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-10 flex flex-wrap gap-3"
             >
-              <a href="#contact" className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.78_0.18_320)] to-[oklch(0.72_0.18_260)] px-6 py-3 font-semibold text-primary-foreground glow-ring transition-transform hover:-translate-y-0.5">
+              <a href="#contact" className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.68_0.18_30)] to-[oklch(0.45_0.16_25)] px-6 py-3 font-semibold text-primary-foreground glow-ring transition-transform hover:-translate-y-0.5">
                 <Rocket className="h-4 w-4 transition-transform group-hover:rotate-12" /> Let's launch
               </a>
               <a href="https://github.com/g-akshaya" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-foreground transition-colors hover:border-primary">
@@ -263,15 +215,18 @@ function Index() {
           <div className="glass rounded-3xl p-8">
             <h3 className="text-2xl font-bold uppercase">Curious by default.</h3>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              I gravitate toward systems that learn and adapt — retrieval pipelines, automation flows, intelligent search.
-              Outside the editor I'm usually tracing constellations, in the gym, or clay sculpting.
+              I like things that reveal themselves slowly.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Different mediums, same instinct: keep observing until the pattern shows up.
+              Trails make more sense the further you walk them. Strength comes from repetition. The night sky rewards patience. Software systems aren't much different.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Also, President of the Nature Watch Club at college — running sustainability workshops and student engagement programs.
+              That curiosity is what pulled me into AI, backend engineering, and building tools that solve real-world problems. I enjoy taking apart complex systems, understanding the patterns underneath, and putting them back together in a way that makes sense.
             </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Outside the editor you'll usually find me planning the next trek, lifting something heavy, sketching ideas, or looking up.
+            </p>
+            <p className="mt-4 font-mono text-sm text-primary">Still chasing good questions.</p>
           </div>
           <div className="glass rounded-3xl p-8 flex flex-col justify-between">
             <div>
@@ -280,12 +235,15 @@ function Index() {
                 "Somewhere, something incredible is waiting to be known."
               </blockquote>
               <div className="mt-3 font-mono text-sm text-muted-foreground">— Carl Sagan</div>
+              <p className="mt-8 text-muted-foreground leading-relaxed">
+                The best projects usually start the same way: with a question I can't stop thinking about.
+              </p>
             </div>
             <div className="mt-8 flex items-center gap-3 text-primary">
-              <Star className="h-4 w-4 fill-current animate-pulse" />
+              <Star className="h-4 w-4 fill-current" />
               <Moon className="h-5 w-5" />
               <Sparkles className="h-4 w-4" />
-              <span className="font-mono text-xs text-muted-foreground">a problem · a trail · a clear night sky.</span>
+              <span className="font-mono text-xs text-muted-foreground">a question · a trail · a clear night sky.</span>
             </div>
           </div>
         </div>
@@ -423,7 +381,7 @@ function Index() {
           </h2>
           <p className="mt-4 text-muted-foreground">Open to AI / ML / Backend roles &amp; collaborations.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="mailto:akshaya@example.com" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.78_0.18_320)] to-[oklch(0.72_0.18_260)] px-6 py-3 font-semibold text-primary-foreground glow-ring">
+            <a href="mailto:akshaya@example.com" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.68_0.18_30)] to-[oklch(0.45_0.16_25)] px-6 py-3 font-semibold text-primary-foreground glow-ring">
               <Mail className="h-4 w-4" /> Send a transmission
             </a>
             <a href="https://github.com/g-akshaya" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-foreground hover:border-primary transition-colors">
@@ -437,7 +395,7 @@ function Index() {
       </Section>
 
       <footer className="relative z-10 mx-auto max-w-6xl px-6 pb-12 pt-4 flex items-center justify-between font-mono text-xs text-muted-foreground">
-        <div className="flex items-center gap-2"><CatAstronautLogo className="h-5 w-5 text-primary" /> AKSHAYA.G · 2026</div>
+        <div className="flex items-center gap-2"><RoverLogo className="h-5 w-5 text-primary" /> AKSHAYA.G · 2026</div>
         <div>Made among the stars ✦</div>
       </footer>
     </div>

@@ -70,29 +70,28 @@
   --card-foreground: oklch(0.96 0.02 280);
   --popover: oklch(0.18 0.05 282);
   --popover-foreground: oklch(0.96 0.02 280);
-  --primary: oklch(0.78 0.18 320);
+  --primary: oklch(0.68 0.18 30);
   --primary-foreground: oklch(0.12 0.04 280);
-  --secondary: oklch(0.25 0.06 280);
+  --secondary: oklch(0.22 0.04 25);
   --secondary-foreground: oklch(0.96 0.02 280);
-  --muted: oklch(0.22 0.04 280);
-  --muted-foreground: oklch(0.72 0.04 280);
-  --accent: oklch(0.82 0.16 220);
+  --muted: oklch(0.2 0.03 20);
+  --muted-foreground: oklch(0.72 0.03 30);
+  --accent: oklch(0.7 0.14 40);
   --accent-foreground: oklch(0.12 0.04 280);
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.98 0.01 280);
   --border: oklch(0.98 0.02 280 / 0.12);
   --input: oklch(0.98 0.02 280 / 0.15);
-  --ring: oklch(0.78 0.18 320);
-  --nebula-pink: oklch(0.72 0.22 340);
-  --nebula-violet: oklch(0.55 0.22 295);
-  --nebula-cyan: oklch(0.82 0.14 210);
+  --ring: oklch(0.68 0.18 30);
+  --nebula-pink: oklch(0.62 0.18 30);
+  --nebula-violet: oklch(0.45 0.14 25);
+  --nebula-cyan: oklch(0.55 0.1 40);
   --star: oklch(0.98 0.04 95);
-  --gradient-cosmic: radial-gradient(ellipse at 15% 5%, oklch(0.22 0.1 295 / 0.55), transparent 50%),
-                     radial-gradient(ellipse at 85% 25%, oklch(0.22 0.1 340 / 0.45), transparent 55%),
-                     radial-gradient(ellipse at 60% 95%, oklch(0.2 0.1 210 / 0.45), transparent 60%),
-                     linear-gradient(180deg, oklch(0.06 0.025 280), oklch(0.08 0.03 285));
+  --gradient-cosmic: radial-gradient(ellipse at 20% 0%, oklch(0.22 0.08 30 / 0.55), transparent 55%),
+                     radial-gradient(ellipse at 85% 90%, oklch(0.18 0.06 20 / 0.45), transparent 60%),
+                     linear-gradient(180deg, oklch(0.08 0.02 25), oklch(0.05 0.01 20));
   --gradient-aurora: linear-gradient(135deg, var(--nebula-pink), var(--nebula-violet) 50%, var(--nebula-cyan));
-  --shadow-glow: 0 0 40px oklch(0.78 0.22 320 / 0.45), 0 0 120px oklch(0.55 0.22 295 / 0.35);
+  --shadow-glow: 0 0 30px oklch(0.6 0.18 30 / 0.35), 0 0 80px oklch(0.4 0.14 25 / 0.25);
   --shadow-card: 0 30px 80px -20px oklch(0.05 0.04 280 / 0.8), inset 0 1px 0 oklch(1 0 0 / 0.06);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);

@@ -84,19 +84,19 @@ function Index() {
       <motion.div
         aria-hidden
         style={{ scaleX: scrollYProgress }}
-        className="fixed top-0 left-0 right-0 z-50 h-[3px] origin-left bg-gradient-to-r from-[oklch(0.78_0.18_320)] via-[oklch(0.78_0.18_260)] to-[oklch(0.82_0.16_210)]"
+        className="fixed top-0 left-0 right-0 z-50 h-[3px] origin-left bg-gradient-to-r from-[oklch(0.68_0.18_30)] via-[oklch(0.55_0.16_25)] to-[oklch(0.4_0.12_20)]"
       />
 
       {/* Floating planets */}
       <motion.div
         aria-hidden
         className="pointer-events-none fixed top-32 right-[8%] z-0 h-40 w-40 rounded-full opacity-70"
-        style={{ background: "radial-gradient(circle at 30% 30%, oklch(0.85 0.18 340), oklch(0.45 0.22 295) 60%, oklch(0.15 0.05 280))", boxShadow: "0 0 80px oklch(0.55 0.22 320 / 0.5)", y: planet1Y, rotate: planet1Rot }}
+        style={{ background: "radial-gradient(circle at 30% 30%, oklch(0.75 0.16 40), oklch(0.45 0.16 25) 60%, oklch(0.12 0.03 20))", boxShadow: "0 0 60px oklch(0.45 0.16 25 / 0.4)", y: planet1Y, rotate: planet1Rot }}
       />
       <motion.div
         aria-hidden
         className="pointer-events-none fixed bottom-40 left-[5%] z-0 h-24 w-24 rounded-full opacity-60"
-        style={{ background: "radial-gradient(circle at 35% 35%, oklch(0.85 0.14 210), oklch(0.4 0.18 220) 70%, oklch(0.12 0.04 280))", boxShadow: "0 0 60px oklch(0.55 0.18 210 / 0.6)", y: planet2Y }}
+        style={{ background: "radial-gradient(circle at 35% 35%, oklch(0.65 0.12 50), oklch(0.35 0.1 30) 70%, oklch(0.1 0.02 20))", boxShadow: "0 0 40px oklch(0.4 0.12 30 / 0.4)", y: planet2Y }}
       />
 
       {/* Nav */}
@@ -146,8 +146,8 @@ function Index() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed"
             >
-              Aspiring AI &amp; software engineer building RAG systems, intelligent search and backend tooling.
-              I like problems that need a bit of patience and a lot of curiosity — the kind a space-cat would approve of. 🐾
+              Building AI systems and backend software for people who need answers, not complexity.
+              Motivated by curiosity, guided by engineering, and always looking a little further over the horizon.
             </motion.p>
 
             <motion.div
@@ -156,7 +156,7 @@ function Index() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-10 flex flex-wrap gap-3"
             >
-              <a href="#contact" className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.78_0.18_320)] to-[oklch(0.72_0.18_260)] px-6 py-3 font-semibold text-primary-foreground glow-ring transition-transform hover:-translate-y-0.5">
+              <a href="#contact" className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.68_0.18_30)] to-[oklch(0.45_0.16_25)] px-6 py-3 font-semibold text-primary-foreground glow-ring transition-transform hover:-translate-y-0.5">
                 <Rocket className="h-4 w-4 transition-transform group-hover:rotate-12" /> Let's launch
               </a>
               <a href="https://github.com/g-akshaya" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-foreground transition-colors hover:border-primary">
@@ -375,7 +375,7 @@ function Index() {
           </h2>
           <p className="mt-4 text-muted-foreground">Open to AI / ML / Backend roles &amp; collaborations.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="mailto:akshaya@example.com" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.78_0.18_320)] to-[oklch(0.72_0.18_260)] px-6 py-3 font-semibold text-primary-foreground glow-ring">
+            <a href="mailto:akshaya@example.com" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[oklch(0.68_0.18_30)] to-[oklch(0.45_0.16_25)] px-6 py-3 font-semibold text-primary-foreground glow-ring">
               <Mail className="h-4 w-4" /> Send a transmission
             </a>
             <a href="https://github.com/g-akshaya" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-foreground hover:border-primary transition-colors">

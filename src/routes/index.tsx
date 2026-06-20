@@ -202,7 +202,7 @@ function Index() {
               </div>
               <div className="rounded-xl border border-border bg-background/40 p-4">
                 <div className="font-black text-3xl text-aurora">3×</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Internships shipped</div>
+                <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">INTERNSHIPS COMPLETED</div>
               </div>
             </div>
           </motion.div>

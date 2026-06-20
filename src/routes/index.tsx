@@ -5,10 +5,10 @@ import { Rocket, Github, Linkedin, Mail, Star, Orbit, Satellite, Telescope, Spar
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Akshaya.G — AI & Software Engineer in the Cosmos" },
-      { name: "description", content: "Aspiring AI & Software engineer building RAG systems, intelligent search and backend tooling — exploring the universe of code." },
-      { property: "og:title", content: "Akshaya.G — AI & Software Engineer" },
-      { property: "og:description", content: "RAG systems, intelligent search, and backend tooling — built among the stars." },
+      { title: "Akshaya Portfolio — AI & Software Engineer" },
+      { name: "description", content: "Akshaya's portfolio showcasing RAG systems, intelligent search solutions, and backend tooling expertise." },
+      { property: "og:title", content: "Akshaya Portfolio" },
+      { property: "og:description", content: "AI & Software Engineer specializing in RAG systems, intelligent search, and backend development." },
     ],
   }),
   component: Index,

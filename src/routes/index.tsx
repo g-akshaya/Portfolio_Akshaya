@@ -389,7 +389,7 @@ function Index() {
       </Section>
 
       <footer className="relative z-10 mx-auto max-w-6xl px-6 pb-12 pt-4 flex items-center justify-between font-mono text-xs text-muted-foreground">
-        <div className="flex items-center gap-2"><CatAstronautLogo className="h-5 w-5 text-primary" /> AKSHAYA.G · 2026</div>
+        <div className="flex items-center gap-2"><RoverLogo className="h-5 w-5 text-primary" /> AKSHAYA.G · 2026</div>
         <div>Made among the stars ✦</div>
       </footer>
     </div>
